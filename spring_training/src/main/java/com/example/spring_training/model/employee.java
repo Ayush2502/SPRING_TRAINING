@@ -9,14 +9,16 @@ public class employee {
     private String id;
     private String name;
     private int age;
+    private String city;
 
     public employee() {
     }
 
-    public employee(String id, String name, int age) {
+    public employee(String id, String name, int age,String city) {
         this.id = id;
         this.name = name;
         this.age = age;
+        this.city=city;
     }
 
     public String getId() {
@@ -41,6 +43,14 @@ public class employee {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }
 
